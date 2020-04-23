@@ -2,7 +2,7 @@
 
 Juego de la Vida programado en emnos de 1 hora, recogiendo el reto de @DotCSV.
 
-# Dependencies
+# Dependencias
 * Python 3.6
 * pip install numpy
 * pip install pygame
