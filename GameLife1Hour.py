@@ -46,18 +46,23 @@ while 1:
 			if event.key == pygame.K_SPACE:
 				run = not run
 				c = 0
+			if event.key == pygame.K_r :
+				state = np.random.randint(0, 2, (nXc,nYc) )
+				run = True
+				c = 0
 		if event.type == pygame.MOUSEBUTTONDOWN :
 			run = False
 		if event.type == pygame.MOUSEBUTTONUP :
 			pos = pygame.mouse.get_pos()
-			print( pos )
+			# print( pos )
 			i = int(( pos[0] - border ) / cell_w)
 			j = int(( pos[1] - border ) / cell_h)
 			
-			if state[i][j] == 0 :
-				state[i][j] = 1
-			else :
-				state[i][j] = 0
+			if i >= 0 and i < nXc and j >= 0 and j < nYc :
+				if state[i][j] == 0 :
+					state[i][j] = 1
+				else :
+					state[i][j] = 0
 			
 	screen.fill(BLACK)
 
