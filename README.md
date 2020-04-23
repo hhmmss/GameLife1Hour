@@ -8,7 +8,8 @@ Juego de la Vida programado en emnos de 1 hora, recogiendo el reto de @DotCSV.
 * pip install pygame
 
 # Uso
-* [Escape] Limpia la pantalla
+* [Escape] Reinicia con un mapa vacio
+* [R] Reinicia con un mapa aleatorio
 * [Espace] Para o reinicia la simulación
 * [mouse click] Pone o quita célula
 
